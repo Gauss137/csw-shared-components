@@ -19,9 +19,9 @@
   "author": "CSW Ingeniería Civil",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "next": "^14.0.0"
+    "react": ">=18",
+    "react-dom": ">=18",
+    "next": ">=14"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
