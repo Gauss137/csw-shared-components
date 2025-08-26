@@ -3,6 +3,7 @@ export { Header } from './components/Header';
 export { Footer } from './components/Footer';
 export { MobileMenu } from './components/MobileMenu';
 export { LegalModal } from './components/LegalModal';
+export { SharedImage } from './components/SharedImage';
 
 // Exportaciones de hooks
 export { useModal } from './hooks/useModal';

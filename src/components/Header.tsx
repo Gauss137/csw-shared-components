@@ -1,9 +1,9 @@
 "use client";
 import Link from 'next/link';
-import Image from 'next/image';
 import { APP_CONFIG, EXTERNAL_LINKS, ROUTES } from '../constants';
 import { MobileMenu } from './MobileMenu';
 import { usePathname } from 'next/navigation';
+import { SharedImage } from './SharedImage';
 
 export function Header() {
   const pathname = usePathname();
@@ -13,13 +13,12 @@ export function Header() {
         <div className="flex items-center">
           <a href="https://www.cswingenieriacivil.com/herramientas" className="flex items-center" target="_blank" rel="noopener noreferrer">
             {/* Logo temporalmente oculto mientras se actualiza el archivo SVG */}
-            {/* <Image
-              src="/negrologotij webpage.svg"
+            {/* <SharedImage
+              src="negrologotij.png"
               alt={APP_CONFIG.COMPANY}
               width={150}
               height={60}
               className="h-12 w-auto object-contain"
-              priority
             /> */}
             <span className="text-xl font-bold text-gray-900">{APP_CONFIG.company}</span>
           </a>

@@ -1,10 +1,10 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import { LegalModal } from './LegalModal';
 import { useModal } from '../hooks/useModal';
 import { APP_CONFIG, EXTERNAL_LINKS } from '../constants';
+import { SharedImage } from './SharedImage';
 
 export function Footer() {
   const [currentYear, setCurrentYear] = useState('');
@@ -60,8 +60,8 @@ export function Footer() {
               className="hover:opacity-80 transition-opacity"
               aria-label="LinkedIn"
             >
-              <Image
-                src="/naranjalinktij.png"
+              <SharedImage
+                src="naranjalinktij.png"
                 alt="LinkedIn"
                 width={35}
                 height={35}
@@ -76,8 +76,8 @@ export function Footer() {
               className="hover:opacity-80 transition-opacity"
               aria-label="Instagram"
             >
-              <Image
-                src="/naranjainsttij.png"
+              <SharedImage
+                src="naranjainsttij.png"
                 alt="Instagram"
                 width={35}
                 height={35}
