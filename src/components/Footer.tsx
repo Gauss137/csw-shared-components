@@ -8,6 +8,7 @@ import { SharedImage } from './SharedImage';
 
 export function Footer() {
   const [currentYear, setCurrentYear] = useState('');
+  const { isOpen, openModal, closeModal } = useModal();
 
   useEffect(() => {
     setCurrentYear(new Date().getFullYear().toString());
@@ -42,6 +43,7 @@ export function Footer() {
           
           <div className="mt-2 border-t border-gray-200 pt-2">
             <button
+              onClick={openModal}
               className="text-xs text-gray-400 hover:text-gray-600 underline transition-colors"
             >
               Aviso Legal y Términos de Uso
@@ -87,6 +89,8 @@ export function Footer() {
           </div>
         </div>
       </footer>
+
+      <LegalModal isOpen={isOpen} onClose={closeModal} />
     </>
   );
 }
