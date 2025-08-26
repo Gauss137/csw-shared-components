@@ -1,0 +1,35 @@
+{
+  "name": "@csw/shared-components",
+  "version": "1.0.0",
+  "description": "Componentes compartidos para las aplicaciones CSW Ingeniería Civil",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "csw",
+    "ingenieria-civil",
+    "shared"
+  ],
+  "author": "CSW Ingeniería Civil",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "next": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}
